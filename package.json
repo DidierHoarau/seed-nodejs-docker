@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/app.js",
-    "dev:docker": "./_dev/start-docker.sh"
+    "dev:docker": "./_dev/start-docker.sh",
+    "dev:kubernetes": "./_dev/start-kubernetes.sh"
   },
   "repository": {
     "type": "git",

@@ -8,10 +8,9 @@ SERVICE_VERSION=$(cat ${SERVICE_DIR}/package.json | grep '"version"' | head -n1 
 DOCKER_IMAGE="${SERVICE_NAME}-dev:${SERVICE_VERSION}"
 DOCKER_ID="${SERVICE_NAME}-dev"
 
-echo "DOCKER_IMAGE: ${DOCKER_IMAGE}"
 docker build -t ${DOCKER_IMAGE} _dev
 
-docker rm -f ${DOCKER_ID} || true > /dev/null 2>&1
+docker rm -f ${DOCKER_ID} > /dev/null 2>&1 || true
 docker run -d \
     --user $(id -u):$(id -g)\
     -p 3000 \

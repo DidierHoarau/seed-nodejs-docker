@@ -1,20 +1,26 @@
 # seed-nodejs-docker
 
-Code template to run a NodeJS development environment in Docker
+Code template to run a NodeJS development environment in Docker or Kubernetes
 
 ## Usage
 
 Start the development environment with
 
+For Docker:
+
 ```bash
 npm run dev:docker
 ```
 
+For Kubernetes:
+
+```bash
+npm run dev:kubernetes
+```
+
 ## Principles
 
-The script to start the cotnainer is in `_dev/start-docker.sh`
-
-This is designed so that the `_dev` folder can be copied to any repository that need to use the same procedure. All other resources in this repository are for example purposes and have to be customized for each projects.
+The related scripts and resources are in the `_dev` folder. Should work of the box for a proof of concept but can be constomized. This is designed so that the `_dev` folder can be copied to any repository that need to use the same procedure. All other resources in this repository are for example purposes and have to be customized for each projects.
 
 The container
 
