@@ -1,0 +1,25 @@
+{
+  "name": "seed-nodejs-docker",
+  "version": "1.0.0",
+  "description": "Code template to run a NodeJS development environment in Docker",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "dev:docker": "./_dev/start-docker.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DidierHoarau/seed-nodejs-docker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DidierHoarau/seed-nodejs-docker/issues"
+  },
+  "homepage": "https://github.com/DidierHoarau/seed-nodejs-docker#readme",
+  "dependencies": {
+    "fastify": "^3.27.4",
+    "nodemon": "^2.0.15"
+  }
+}
